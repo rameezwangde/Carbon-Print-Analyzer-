@@ -1,0 +1,33 @@
+$ pnpm add lucide-react @radix-ui/react-dialog
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 118, reused 118, downloaded 0, added 0
+Progress: resolved 491, reused 485, downloaded 0, added 0
+ WARN  1 deprecated subdependencies found: rollup-plugin-terser@7.0.2
+Already up to date
+Progress: resolved 578, reused 504, downloaded 0, added 0, done
+
+Done in 5.4s
+$ pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1739 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.05 kB │ gzip:   0.50 kB
+dist/assets/index-DnllyQwK.css   76.93 kB │ gzip:  12.64 kB
+dist/assets/index-Yq4YI_cn.js   698.67 kB │ gzip: 229.42 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.42s
