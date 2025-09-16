@@ -77,3 +77,41 @@
 - Peer group comparison.
 - History limited to last 5 submissions.
 - Reset functionality.
+
+---
+
+## 📂 Project Paths & Files
+
+### 🔹 Backend (FastAPI + ML)
+- **ML service** → `workspace/shadcn-ui/api/ml_service.py`
+- **Retraining script** → `workspace/shadcn-ui/api/retrain.py`
+- **Saved model** → `workspace/shadcn-ui/api/models/carbon_rf.pkl`
+- **User submissions** → `workspace/shadcn-ui/api/data/user_submissions.csv`
+- **Base dataset** → `workspace/shadcn-ui/api/data/carbon_emission_augmented_extended.csv`
+
+**Run retrain manually:**
+```bash
+cd workspace/shadcn-ui/api
+python retrain.py
+```
+
+**Run backend server:**
+```bash
+cd workspace/shadcn-ui/api
+uvicorn ml_service:app --reload --port 8000
+```
+
+### 🔹 Frontend (React + TSX)
+- **Survey page** → `workspace/shadcn-ui/src/pages/Survey.tsx`
+- **Dashboard page** → `workspace/shadcn-ui/src/pages/Dashboard.tsx`
+- **ChatBot component** → `workspace/shadcn-ui/src/components/ChatBot.tsx`
+- **Carbon Calculator utility** → `workspace/shadcn-ui/src/services/carbonCalculator.ts`
+- **Constants/config** → `workspace/shadcn-ui/src/config/constants.ts`
+
+**Run frontend server:**
+```bash
+cd workspace/shadcn-ui
+npm run dev
+```
+
+---
